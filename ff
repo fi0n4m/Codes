@@ -1,0 +1,27 @@
+public class App {
+    public static void main(String[] args) throws Exception {
+        
+        char[][] letters_4x3 = {
+            {'A', 'B', 'C'},
+            {'D', 'E', 'F'},
+            {'G', 'H', 'I'},
+            {'J', 'K', 'L'}
+    };
+    //outer loop
+      for (int rows= 0; rows < 4; rows++) {
+    System.out.println("");
+    //inner loop 
+    for (int columns = 0; columns < 3; columns++) {
+    
+        // if row is even 
+        if (rows % 2 == 0){
+            System.out.print(" ");        }
+           else { 
+            System.out.print(letters_4x3 [rows][columns]);
+           }
+           
+        }
+    } 
+}
+ }
+
